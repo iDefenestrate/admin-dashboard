@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.container div {
+  padding: 15px;
+}
+
+.header {
+  grid-column: 2/4;
+  grid-row: 1;
+  background-color: red;
+}
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 1/5;
+  background-color: aquamarine;
+}
+
+.main-content {
+  grid-row: 2/4;
+  grid-column: 2/4;
+  background-color: orange;
+}
