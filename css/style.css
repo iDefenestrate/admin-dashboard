@@ -32,6 +32,9 @@
 .main-content {
   grid-row: 2/4;
   grid-column: 2/4;
+  background-color: peachpuff;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
 }
 
 /* header */
@@ -142,8 +145,34 @@ input[type='search']::-webkit-search-results-decoration {
   font-size: 1.3rem;
   background-color: rgb(13, 153, 200);
   border-radius: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 550;
   color: white;
   cursor: pointer;
+}
+
+/* main content */
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-left > p {
+  padding-top: 4px;
+  font-size: 1.1rem;
+  font-weight: 550;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+}
+
+.left-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
