@@ -16,7 +16,10 @@
 .header {
   grid-column: 2/4;
   grid-row: 1;
-  background-color: red;
+  background-color: rgb(204, 156, 156);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .sidebar {
@@ -29,4 +32,26 @@
   grid-row: 2/4;
   grid-column: 2/4;
   background-color: orange;
+}
+
+/* header */
+
+.search-container {
+  display: flex;
+  gap: 15px;
+}
+
+.search-container > label > img {
+  margin-left: 5px;
+}
+
+.search-container > input {
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: beige;
+  width: 70%;
+}
+
+.search-container:focus {
 }
