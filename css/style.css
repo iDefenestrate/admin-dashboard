@@ -16,7 +16,12 @@
 }
 
 .header > div {
-  padding: 10px;
+  padding: 5px;
+}
+
+.search-container,
+.profile-greeting {
+  margin-left: 20px;
 }
 
 .header {
